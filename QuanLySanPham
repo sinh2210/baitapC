@@ -127,7 +127,7 @@ void add_products(Product* &products, int &size)
 	}
 	tmp_products[new_size - 1]= new_products;
 	
-	delete products;
+	delete[] products;
 	products = tmp_products;
 	size = new_size;
 	
